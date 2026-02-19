@@ -7,7 +7,7 @@ colp = "Rosso"
 ser = serial.Serial("COM7", 9600)
 
 file = open("dati_semaforo.csv", "w")
-file.write("timestamp, colore\n")
+file.write("conteggio", "timestamp, colore\n")
 
 while True:
     colore = data=ser.readline().decode("utf-8").strip()
